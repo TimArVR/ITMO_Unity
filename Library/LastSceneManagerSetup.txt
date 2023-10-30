@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Asteroids-Host-Simple/Scenes/AsteroidsSimple-Menu.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
