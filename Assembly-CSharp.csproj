@@ -53,6 +53,9 @@
     <UnityVersion>2020.3.35f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\PlayerSpawnerPrototype.cs" />
     <Compile Include="Assets\Asteroids-Host-Simple\Spaceship\SpaceshipMovementController.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\CommonSceneObject.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="Assets\Asteroids-Host-Simple\Asteroid\AsteroidSpawner.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsBillboard.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ToggleRunnerVisibility.cs" />
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsMeterBar.cs" />
     <Compile Include="Assets\Asteroids-Host-Simple\Pool\NetworkObjectPoolDefault.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionPhotonClientSocket.cs" />
@@ -118,7 +122,14 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ControllerPrototype.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
     <Compile Include="Assets\Asteroids-Host-Simple\Spaceship\SpawnPoint.cs" />
-    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Asteroids-Host-Simple\Input\UISpaceShipInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -828,9 +839,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="CW.Common.csproj">
+      <Project>{946C8A04-E121-8CF5-4157-435825FF94C1}</Project>
+      <Name>CW.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanTouch.csproj">
+      <Project>{17545701-CADF-1BD4-3EE0-20E14C954305}</Project>
+      <Name>LeanTouch</Name>
+    </ProjectReference>
     <ProjectReference Include="Fusion.Editor.csproj">
       <Project>{76D638FA-0D3E-0A3F-D89A-35EF911AF878}</Project>
       <Name>Fusion.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{15940D2A-F001-2AC9-260C-AF0133EFC9FE}</Project>
+      <Name>LeanCommon</Name>
     </ProjectReference>
     <ProjectReference Include="Fusion.Addressables.csproj">
       <Project>{FAC66921-F836-1A1A-78E8-002A59958EBE}</Project>

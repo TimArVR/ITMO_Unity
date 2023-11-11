@@ -53,7 +53,14 @@
     <UnityVersion>2020.3.35f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Editor\NetworkDebugStartEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\Fusion\Editor\Resources\ComponentHeaderGraphics\Fonts\OFL.txt" />
@@ -770,9 +777,21 @@
       <Project>{5D357D63-018F-04A5-7AED-297AAE7DEC27}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="CW.Common.csproj">
+      <Project>{946C8A04-E121-8CF5-4157-435825FF94C1}</Project>
+      <Name>CW.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanTouch.csproj">
+      <Project>{17545701-CADF-1BD4-3EE0-20E14C954305}</Project>
+      <Name>LeanTouch</Name>
+    </ProjectReference>
     <ProjectReference Include="Fusion.Editor.csproj">
       <Project>{76D638FA-0D3E-0A3F-D89A-35EF911AF878}</Project>
       <Name>Fusion.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{15940D2A-F001-2AC9-260C-AF0133EFC9FE}</Project>
+      <Name>LeanCommon</Name>
     </ProjectReference>
     <ProjectReference Include="Fusion.Addressables.csproj">
       <Project>{FAC66921-F836-1A1A-78E8-002A59958EBE}</Project>
